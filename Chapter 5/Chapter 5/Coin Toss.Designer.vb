@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FlipCoin
+Partial Class CoinToss
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,16 +22,117 @@ Partial Class FlipCoin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.picHeads = New System.Windows.Forms.PictureBox()
+        Me.picTails = New System.Windows.Forms.PictureBox()
+        Me.btnTossCoin = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblHeadsTotal = New System.Windows.Forms.Label()
+        Me.lblTailsTotal = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        CType(Me.picHeads, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTails, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'FlipCoin
+        'picHeads
+        '
+        Me.picHeads.Image = Global.Chapter_5.My.Resources.Resources.coin_2
+        Me.picHeads.Location = New System.Drawing.Point(21, 29)
+        Me.picHeads.Name = "picHeads"
+        Me.picHeads.Size = New System.Drawing.Size(191, 177)
+        Me.picHeads.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picHeads.TabIndex = 0
+        Me.picHeads.TabStop = False
+        '
+        'picTails
+        '
+        Me.picTails.Image = Global.Chapter_5.My.Resources.Resources.coin
+        Me.picTails.Location = New System.Drawing.Point(245, 29)
+        Me.picTails.Name = "picTails"
+        Me.picTails.Size = New System.Drawing.Size(191, 177)
+        Me.picTails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picTails.TabIndex = 1
+        Me.picTails.TabStop = False
+        '
+        'btnTossCoin
+        '
+        Me.btnTossCoin.Location = New System.Drawing.Point(71, 242)
+        Me.btnTossCoin.Name = "btnTossCoin"
+        Me.btnTossCoin.Size = New System.Drawing.Size(75, 23)
+        Me.btnTossCoin.TabIndex = 2
+        Me.btnTossCoin.Text = "Toss Coin"
+        Me.btnTossCoin.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(289, 242)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.TabIndex = 3
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(40, 286)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(80, 13)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Total of Heads:"
+        '
+        'lblHeadsTotal
+        '
+        Me.lblHeadsTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblHeadsTotal.Location = New System.Drawing.Point(135, 286)
+        Me.lblHeadsTotal.Name = "lblHeadsTotal"
+        Me.lblHeadsTotal.Size = New System.Drawing.Size(58, 23)
+        Me.lblHeadsTotal.TabIndex = 5
+        '
+        'lblTailsTotal
+        '
+        Me.lblTailsTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblTailsTotal.Location = New System.Drawing.Point(337, 286)
+        Me.lblTailsTotal.Name = "lblTailsTotal"
+        Me.lblTailsTotal.Size = New System.Drawing.Size(58, 23)
+        Me.lblTailsTotal.TabIndex = 7
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(242, 286)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(71, 13)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "Total of Tails:"
+        '
+        'CoinToss
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Name = "FlipCoin"
+        Me.ClientSize = New System.Drawing.Size(448, 341)
+        Me.Controls.Add(Me.lblTailsTotal)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.lblHeadsTotal)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnTossCoin)
+        Me.Controls.Add(Me.picTails)
+        Me.Controls.Add(Me.picHeads)
+        Me.Name = "CoinToss"
         Me.Text = "Coin Toss"
+        CType(Me.picHeads, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTails, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+    Friend WithEvents picHeads As System.Windows.Forms.PictureBox
+    Friend WithEvents picTails As System.Windows.Forms.PictureBox
+    Friend WithEvents btnTossCoin As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents lblHeadsTotal As System.Windows.Forms.Label
+    Friend WithEvents lblTailsTotal As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class
