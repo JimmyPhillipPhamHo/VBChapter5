@@ -70,10 +70,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Coin Toss.Designer.vb">
+    <Compile Include="Tutorial Application\ComboBoxDemo.Designer.vb">
+      <DependentUpon>ComboBoxDemo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial Application\ComboBoxDemo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game Application\Coin Toss.Designer.vb">
       <DependentUpon>Coin Toss.vb</DependentUpon>
     </Compile>
-    <Compile Include="Coin Toss.vb">
+    <Compile Include="Game Application\Coin Toss.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tutorial Application\ForNextDemo2.Designer.vb">
+      <DependentUpon>ForNextDemo2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial Application\ForNextDemo2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game Application\RaceCarGame.Designer.vb">
+      <DependentUpon>RaceCarGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Game Application\RaceCarGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game Application\RandomNumberGuessingGameEnhancement.Designer.vb">
+      <DependentUpon>RandomNumberGuessingGameEnhancement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Game Application\RandomNumberGuessingGameEnhancement.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.vb">
@@ -82,16 +106,22 @@
     <Compile Include="Menu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RockPaperScissors.Designer.vb">
-      <DependentUpon>RockPaperScissors.vb</DependentUpon>
+    <Compile Include="RightTriangle.Designer.vb">
+      <DependentUpon>RightTriangle.vb</DependentUpon>
     </Compile>
-    <Compile Include="RockPaperScissors.vb">
+    <Compile Include="RightTriangle.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RunningTotal.Designer.vb">
+    <Compile Include="Game Application\RockPaperScissors.Designer.vb">
+      <DependentUpon>RockPaperScissors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Game Application\RockPaperScissors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tutorial Application\RunningTotal.Designer.vb">
       <DependentUpon>RunningTotal.vb</DependentUpon>
     </Compile>
-    <Compile Include="RunningTotal.vb">
+    <Compile Include="Tutorial Application\RunningTotal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -109,30 +139,42 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Sum of Number.Designer.vb">
+    <Compile Include="Math Application\Sum of Number.Designer.vb">
       <DependentUpon>Sum of Number.vb</DependentUpon>
     </Compile>
-    <Compile Include="Sum of Number.vb">
+    <Compile Include="Math Application\Sum of Number.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Test Scores.Designer.vb">
+    <Compile Include="Tutorial Application\Test Scores.Designer.vb">
       <DependentUpon>Test Scores.vb</DependentUpon>
     </Compile>
-    <Compile Include="Test Scores.vb">
+    <Compile Include="Tutorial Application\Test Scores.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Coin Toss.resx">
+    <EmbeddedResource Include="Tutorial Application\ComboBoxDemo.resx">
+      <DependentUpon>ComboBoxDemo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Application\Coin Toss.resx">
       <DependentUpon>Coin Toss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tutorial Application\ForNextDemo2.resx">
+      <DependentUpon>ForNextDemo2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Application\RandomNumberGuessingGameEnhancement.resx">
+      <DependentUpon>RandomNumberGuessingGameEnhancement.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RockPaperScissors.resx">
+    <EmbeddedResource Include="RightTriangle.resx">
+      <DependentUpon>RightTriangle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game Application\RockPaperScissors.resx">
       <DependentUpon>RockPaperScissors.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RunningTotal.resx">
+    <EmbeddedResource Include="Tutorial Application\RunningTotal.resx">
       <DependentUpon>RunningTotal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -141,10 +183,10 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sum of Number.resx">
+    <EmbeddedResource Include="Math Application\Sum of Number.resx">
       <DependentUpon>Sum of Number.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Test Scores.resx">
+    <EmbeddedResource Include="Tutorial Application\Test Scores.resx">
       <DependentUpon>Test Scores.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -166,6 +208,7 @@
   <ItemGroup>
     <None Include="Resources\coin.PNG" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

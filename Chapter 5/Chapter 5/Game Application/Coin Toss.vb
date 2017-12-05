@@ -26,8 +26,9 @@
             HeadsTotal = HeadsTotal + 1
         End If
 
-        lblTailsTotal.Text = True
-        lblHeadsTotal.Text = False
+        lblTailsTotal.Text = TailsTotal
+        lblHeadsTotal.Text = HeadsTotal
+
 
 
     End Sub
