@@ -22,16 +22,40 @@ Partial Class SumOfNumber
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnEnterNumbers = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnEnterNumbers
+        '
+        Me.btnEnterNumbers.Location = New System.Drawing.Point(50, 53)
+        Me.btnEnterNumbers.Name = "btnEnterNumbers"
+        Me.btnEnterNumbers.Size = New System.Drawing.Size(91, 40)
+        Me.btnEnterNumbers.TabIndex = 0
+        Me.btnEnterNumbers.Text = "Enter Numbers"
+        Me.btnEnterNumbers.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(213, 53)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(91, 40)
+        Me.btnExit.TabIndex = 1
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'SumOfNumber
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(355, 148)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnEnterNumbers)
         Me.Name = "SumOfNumber"
         Me.Text = "Sum of Number"
         Me.ResumeLayout(False)
 
     End Sub
+    Friend WithEvents btnEnterNumbers As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
 End Class

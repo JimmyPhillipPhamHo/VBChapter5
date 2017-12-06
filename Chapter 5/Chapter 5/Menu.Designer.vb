@@ -26,17 +26,17 @@ Partial Class Menu
         Me.btnCoinToss = New System.Windows.Forms.Button()
         Me.btnRockPaperScissors = New System.Windows.Forms.Button()
         Me.btnRaceCarGame = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnSumOfNumber = New System.Windows.Forms.Button()
         Me.btnRandomNumberGuessingGameEnhancement = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.btnPopulation = New System.Windows.Forms.Button()
+        Me.btnDistanceCalculator = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnRunningTotal = New System.Windows.Forms.Button()
         Me.btnTestScore = New System.Windows.Forms.Button()
         Me.btnForNextDemo2 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
+        Me.btnComboBoxDemo = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnRightTriangle = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -78,14 +78,14 @@ Partial Class Menu
         Me.btnRaceCarGame.Text = "Race Car Game"
         Me.btnRaceCarGame.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnSumOfNumber
         '
-        Me.Button4.Location = New System.Drawing.Point(196, 109)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(99, 25)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "Sum Of Number"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnSumOfNumber.Location = New System.Drawing.Point(196, 109)
+        Me.btnSumOfNumber.Name = "btnSumOfNumber"
+        Me.btnSumOfNumber.Size = New System.Drawing.Size(99, 25)
+        Me.btnSumOfNumber.TabIndex = 4
+        Me.btnSumOfNumber.Text = "Sum of Number"
+        Me.btnSumOfNumber.UseVisualStyleBackColor = True
         '
         'btnRandomNumberGuessingGameEnhancement
         '
@@ -96,23 +96,23 @@ Partial Class Menu
         Me.btnRandomNumberGuessingGameEnhancement.Text = "Random Number Gussing Game Enhancement"
         Me.btnRandomNumberGuessingGameEnhancement.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnPopulation
         '
-        Me.Button6.Location = New System.Drawing.Point(196, 200)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 6
-        Me.Button6.Text = "Population"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnPopulation.Location = New System.Drawing.Point(196, 200)
+        Me.btnPopulation.Name = "btnPopulation"
+        Me.btnPopulation.Size = New System.Drawing.Size(75, 23)
+        Me.btnPopulation.TabIndex = 6
+        Me.btnPopulation.Text = "Population"
+        Me.btnPopulation.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btnDistanceCalculator
         '
-        Me.Button7.Location = New System.Drawing.Point(196, 152)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(114, 25)
-        Me.Button7.TabIndex = 7
-        Me.Button7.Text = "Distance Calculator"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnDistanceCalculator.Location = New System.Drawing.Point(196, 152)
+        Me.btnDistanceCalculator.Name = "btnDistanceCalculator"
+        Me.btnDistanceCalculator.Size = New System.Drawing.Size(114, 25)
+        Me.btnDistanceCalculator.TabIndex = 7
+        Me.btnDistanceCalculator.Text = "Distance Calculator"
+        Me.btnDistanceCalculator.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -168,14 +168,14 @@ Partial Class Menu
         Me.btnForNextDemo2.Text = "For Next Demo 2"
         Me.btnForNextDemo2.UseVisualStyleBackColor = True
         '
-        'Button11
+        'btnComboBoxDemo
         '
-        Me.Button11.Location = New System.Drawing.Point(354, 201)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(108, 26)
-        Me.Button11.TabIndex = 15
-        Me.Button11.Text = "Combo Box Demo"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.btnComboBoxDemo.Location = New System.Drawing.Point(354, 201)
+        Me.btnComboBoxDemo.Name = "btnComboBoxDemo"
+        Me.btnComboBoxDemo.Size = New System.Drawing.Size(108, 26)
+        Me.btnComboBoxDemo.TabIndex = 15
+        Me.btnComboBoxDemo.Text = "Combo Box Demo"
+        Me.btnComboBoxDemo.UseVisualStyleBackColor = True
         '
         'Label4
         '
@@ -202,17 +202,17 @@ Partial Class Menu
         Me.ClientSize = New System.Drawing.Size(489, 327)
         Me.Controls.Add(Me.btnRightTriangle)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.btnComboBoxDemo)
         Me.Controls.Add(Me.btnForNextDemo2)
         Me.Controls.Add(Me.btnTestScore)
         Me.Controls.Add(Me.btnRunningTotal)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.btnDistanceCalculator)
+        Me.Controls.Add(Me.btnPopulation)
         Me.Controls.Add(Me.btnRandomNumberGuessingGameEnhancement)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.btnSumOfNumber)
         Me.Controls.Add(Me.btnRaceCarGame)
         Me.Controls.Add(Me.btnRockPaperScissors)
         Me.Controls.Add(Me.btnCoinToss)
@@ -227,17 +227,17 @@ Partial Class Menu
     Friend WithEvents btnCoinToss As System.Windows.Forms.Button
     Friend WithEvents btnRockPaperScissors As System.Windows.Forms.Button
     Friend WithEvents btnRaceCarGame As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents btnSumOfNumber As System.Windows.Forms.Button
     Friend WithEvents btnRandomNumberGuessingGameEnhancement As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents btnPopulation As System.Windows.Forms.Button
+    Friend WithEvents btnDistanceCalculator As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents btnRunningTotal As System.Windows.Forms.Button
     Friend WithEvents btnTestScore As System.Windows.Forms.Button
     Friend WithEvents btnForNextDemo2 As System.Windows.Forms.Button
-    Friend WithEvents Button11 As System.Windows.Forms.Button
+    Friend WithEvents btnComboBoxDemo As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents btnRightTriangle As System.Windows.Forms.Button
 End Class
